@@ -14,6 +14,7 @@
 		2B994E371B7ECE7200B90040 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B994E361B7ECE7200B90040 /* Images.xcassets */; };
 		2B994E3A1B7ECE7200B90040 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B994E381B7ECE7200B90040 /* LaunchScreen.xib */; };
 		2B994E461B7ECE7200B90040 /* AutoLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B994E451B7ECE7200B90040 /* AutoLayoutTests.m */; };
+		2B994E501B7EE48800B90040 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B994E4F1B7EE48800B90040 /* Reveal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		2B994E3F1B7ECE7200B90040 /* AutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B994E441B7ECE7200B90040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B994E451B7ECE7200B90040 /* AutoLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutTests.m; sourceTree = "<group>"; };
+		2B994E4F1B7EE48800B90040 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B994E501B7EE48800B90040 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				2B994E2D1B7ECE7200B90040 /* AppDelegate.h */,
+				2B994E4F1B7EE48800B90040 /* Reveal.framework */,
 				2B994E2E1B7ECE7200B90040 /* AppDelegate.m */,
 				2B994E301B7ECE7200B90040 /* ViewController.h */,
 				2B994E311B7ECE7200B90040 /* ViewController.m */,
@@ -349,8 +353,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AutoLayout",
+				);
 				INFOPLIST_FILE = AutoLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,8 +373,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AutoLayout",
+				);
 				INFOPLIST_FILE = AutoLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
