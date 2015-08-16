@@ -25,6 +25,8 @@
     NSLog(@"第九次提交");
     NSLog(@"19:09");
     //更改
+    
+    NSLog(@"A修改");
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIView *v1 = [[UIView alloc] init];
