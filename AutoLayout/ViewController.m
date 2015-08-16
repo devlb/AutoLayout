@@ -20,6 +20,7 @@
     NSLog(@"第三次提交");
     NSLog(@"第五次提交");
     NSLog(@"第六次提交");
+    NSLog(@"第七次提交");
     //更改
     self.view.backgroundColor = [UIColor whiteColor];
     
