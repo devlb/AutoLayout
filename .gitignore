@@ -1,2 +1,5 @@
-#.gitignore
-#AutoLayout.xcodeproj/project.xcworkspace/xcuserdata/
+.gitignore
+AutoLayout.xcodeproj/project.xcworkspace/xcuserdata/
+.DS_Store
+test.txt
+
