@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"第二次提交");
+    NSLog(@"第三次提交");
     //更改
     self.view.backgroundColor = [UIColor whiteColor];
     
