@@ -24,6 +24,7 @@
      NSLog(@"第八次提交");
     NSLog(@"第九次提交");
     NSLog(@"19:09");
+    NSLog(@"bb提交一");
     //更改
     self.view.backgroundColor = [UIColor whiteColor];
     
