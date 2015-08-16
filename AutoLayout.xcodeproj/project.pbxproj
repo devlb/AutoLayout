@@ -84,8 +84,8 @@
 		2B994E281B7ECE7200B90040 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
-				2B994E2D1B7ECE7200B90040 /* AppDelegate.h */,
 				2B994E4F1B7EE48800B90040 /* Reveal.framework */,
+				2B994E2D1B7ECE7200B90040 /* AppDelegate.h */,
 				2B994E2E1B7ECE7200B90040 /* AppDelegate.m */,
 				2B994E301B7ECE7200B90040 /* ViewController.h */,
 				2B994E311B7ECE7200B90040 /* ViewController.m */,
@@ -442,6 +442,7 @@
 				2B994E4B1B7ECE7200B90040 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B994E4C1B7ECE7200B90040 /* Build configuration list for PBXNativeTarget "AutoLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +451,7 @@
 				2B994E4E1B7ECE7200B90040 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
